@@ -94,4 +94,19 @@ public class Image
 		texture.Apply();
 	}
 
+	public byte[] GetPixelValuesToBytes()
+    {
+		double pixelRangeScale = 1 / 255.0;
+		byte[] allPixelValues = new byte[this.pixelValues.Length];
+		System.Threading.Tasks.Parallel.For(0, pixelValues.Length, (i) =>
+		{
+			allPixelValues[i] = (byte)(pixelValues[i] / pixelRangeScale);
+		});
+		return allPixelValues;
+	}
+
+	public byte GetLabelValueToBytes()
+    {
+		return (byte)label;
+    }
 }
