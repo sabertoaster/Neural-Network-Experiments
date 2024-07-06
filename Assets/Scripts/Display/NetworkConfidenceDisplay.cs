@@ -17,7 +17,7 @@ public class NetworkConfidenceDisplay : MonoBehaviour
 
 	void Start()
 	{
-		drawingController = FindObjectOfType<DrawingController>();
+		drawingController = FindObjectOfType<DrawingController>(); // [Saber] ????
 		network = NetworkSaveData.LoadNetworkFromData(networkFile.text);
 		loader = FindObjectOfType<ImageLoader>();
 	}
