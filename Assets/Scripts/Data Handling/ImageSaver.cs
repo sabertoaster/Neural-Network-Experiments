@@ -90,8 +90,8 @@ public class ImageSaver : MonoBehaviour
 
 	public void Save()
     {
-		string imageFile = System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), "Assets//Data//Custom", "Images " + datasetFileName + ".bytes");
-		string labelFile = System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), "Assets//Data//Custom", "Labels " + datasetFileName + ".bytes");
+		string imageFile = System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), "Assets//Data//Custom//Data", "Images " + datasetFileName + ".bytes");
+		string labelFile = System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), "Assets//Data//Custom//Data", "Labels " + datasetFileName + ".bytes");
 		try
 		{
 			using (var fs = new FileStream(imageFile, FileMode.Create, FileAccess.Write))

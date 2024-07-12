@@ -701,7 +701,7 @@ MonoBehaviour:
   - Z
   - Bolt
   - Spiral
-  datasetFileName: Diag2
+  datasetFileName: Horizontal
   currentLabelUI: {fileID: 1061274299}
 --- !u!1001 &618447250
 PrefabInstance:
@@ -715,6 +715,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Doodle Loader
       objectReference: {fileID: 0}
+    - target: {fileID: 8697488731948749190, guid: 063713b2dc7291a4aa43a9ea283d697d, type: 3}
+      propertyPath: dataFiles.Array.data[0].imageFile
+      value: 
+      objectReference: {fileID: 4900000, guid: 7d962ddb71164294e94c58580535669b, type: 3}
+    - target: {fileID: 8697488731948749190, guid: 063713b2dc7291a4aa43a9ea283d697d, type: 3}
+      propertyPath: dataFiles.Array.data[0].labelFile
+      value: 
+      objectReference: {fileID: 4900000, guid: b6afa7d91a306a445a13a4cb5c86828a, type: 3}
     - target: {fileID: 8697488731948749191, guid: 063713b2dc7291a4aa43a9ea283d697d, type: 3}
       propertyPath: m_RootOrder
       value: 3
