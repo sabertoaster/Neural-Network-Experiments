@@ -468,7 +468,7 @@ MonoBehaviour:
   networkSaveName: TestNetwork
   trainingSplit: 0.8
   hyperParameters:
-    layerSizes: 100300002c0100000a000000
+    layerSizes: 100300002c0100000c000000
     activationType: 2
     outputActivationType: 4
     costType: 1
